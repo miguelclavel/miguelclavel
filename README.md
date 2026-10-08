@@ -71,6 +71,14 @@
 </table>
 </details>
 
+## Designing with AI
+
+| | |
+| --- | --- |
+| **[AI UX patterns](https://github.com/miguelclavel/ai-ux-patterns)** | Seven interface patterns for AI products people can trust: sources, confidence, editable output, undo, why we ask, clear boundaries, and review before an agent acts. Each with a [working demo](https://miguelclavel.github.io/ai-ux-patterns/). |
+| **[AI prompts for product designers](https://github.com/miguelclavel/ai-prompts-for-designers)** | Ten prompts for research synthesis, heuristic and accessibility reviews, UX copy, experiments, prototypes and case studies, each grounded in your own material and followed by the checks to run. |
+| **[Product design playbook](https://github.com/miguelclavel/product-design-playbook)** | How I take a product from a vague request to live and keep it improving: eight steps, real examples, and free templates. |
+
 ## Things you can copy
 
 <table>
