@@ -81,7 +81,7 @@
       <p>Ten small interactions from my site, each with a recording, what went wrong, and the exact prompt to build your own. Three have <a href="https://miguelclavel.github.io/interaction-recipes/">live demos</a> with single file code.</p>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/miguelclavel/pixel-run-game"><img src="https://github.com/miguelclavel/pixel-run-game/raw/main/assets/footer-game.gif" alt="A small runner game where the blocks spell a name"></a>
+      <a href="https://github.com/miguelclavel/pixel-run-game"><img src="https://github.com/miguelclavel/pixel-run-game/raw/main/assets/pixel-run-light.png" alt="A small runner game where the blocks spell a name"></a>
       <h3><a href="https://github.com/miguelclavel/pixel-run-game">Pixel Run</a></h3>
       <p>The game in my footer. The blocks you jump spell my name. One file, React 18, no build step, and you can swap in your own face. <a href="https://miguelclavel.github.io/pixel-run-game/">Play it</a>.</p>
     </td>
