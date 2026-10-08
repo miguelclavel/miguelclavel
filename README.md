@@ -71,6 +71,23 @@
 </table>
 </details>
 
+## Things you can copy
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/miguelclavel/interaction-recipes"><img src="https://github.com/miguelclavel/interaction-recipes/raw/main/02-pixel-trail/demo.gif" alt="A pixel trail following the pointer around a name"></a>
+      <h3><a href="https://github.com/miguelclavel/interaction-recipes">Interaction recipes</a></h3>
+      <p>Ten small interactions from my site, each with a recording, what went wrong, and the exact prompt to build your own. Three have <a href="https://miguelclavel.github.io/interaction-recipes/">live demos</a> with single file code.</p>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/miguelclavel/pixel-run-game"><img src="https://github.com/miguelclavel/pixel-run-game/raw/main/assets/footer-game.gif" alt="A small runner game where the blocks spell a name"></a>
+      <h3><a href="https://github.com/miguelclavel/pixel-run-game">Pixel Run</a></h3>
+      <p>The game in my footer. The blocks you jump spell my name. One file, React 18, no build step, and you can swap in your own face. <a href="https://miguelclavel.github.io/pixel-run-game/">Play it</a>.</p>
+    </td>
+  </tr>
+</table>
+
 ## Things I built with Claude Code
 
 **[A portfolio you can talk to](https://chat.miguelclavel.com/?utm_source=github&utm_medium=profile).** AI is changing the way people look for things: we ask a question and expect an answer right away. So instead of scrolling through projects, visitors ask about my background, projects and experience, and every answer comes from my own resume and case studies, so it never makes things up about me.
@@ -83,7 +100,6 @@ Designed in Claude Design, built with Claude Code, running on Cloudflare Workers
 
 **[miguelclavel.com](https://miguelclavel.com/?utm_source=github&utm_medium=profile)**, rebuilt from the ground up working side by side with Claude. Three things broke on launch week that had nothing to do with the design, and any one of them would have meant nobody saw it. [What broke and what I learned](https://github.com/miguelclavel/miguelclavel/wiki/Built-with-Claude-Code).
 
-**[Small interactions, with the prompts](https://github.com/miguelclavel/miguelclavel/wiki/Interaction-Prompts).** A name where every letter reacts on its own, a pixel trail behind the hero, a line that bends toward your cursor. Each comes with the exact prompt, so you can build your own.
 
 ## How I work
 
