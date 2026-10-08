@@ -96,9 +96,9 @@
 - A quick answer or a detailed one, light or dark, typed or spoken
 - A weekly feedback loop: questions it can't answer yet get recorded, and I add the answers
 
-Designed in Claude Design, built with Claude Code, running on Cloudflare Workers.
+Designed in Claude Design, built with Claude Code, running on Cloudflare Workers. [How it works](https://github.com/miguelclavel/chat-portfolio).
 
-**[miguelclavel.com](https://miguelclavel.com/?utm_source=github&utm_medium=profile)**, rebuilt from the ground up working side by side with Claude. Three things broke on launch week that had nothing to do with the design, and any one of them would have meant nobody saw it. [What broke and what I learned](https://github.com/miguelclavel/miguelclavel/wiki/Built-with-Claude-Code).
+**[miguelclavel.com](https://miguelclavel.com/?utm_source=github&utm_medium=profile)**, rebuilt from the ground up working side by side with Claude. Three things broke on launch week that had nothing to do with the design, and any one of them would have meant nobody saw it. [What broke and what I learned](https://github.com/miguelclavel/miguelclavel.com).
 
 
 ## How I work
