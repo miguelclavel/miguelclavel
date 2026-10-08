@@ -78,7 +78,7 @@
     <td width="50%" valign="top">
       <a href="https://github.com/miguelclavel/interaction-recipes"><img src="https://github.com/miguelclavel/interaction-recipes/raw/main/02-pixel-trail/demo.gif" alt="A pixel trail following the pointer around a name"></a>
       <h3><a href="https://github.com/miguelclavel/interaction-recipes">Interaction recipes</a></h3>
-      <p>Ten small interactions from my site, each with a recording, what went wrong, and the exact prompt to build your own. Three have <a href="https://miguelclavel.github.io/interaction-recipes/">live demos</a> with single file code.</p>
+      <p>Twenty small interactions and fixes from my two portfolios, each with a recording, what went wrong, and the exact prompt to build your own.</p>
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/miguelclavel/pixel-run-game"><img src="https://github.com/miguelclavel/pixel-run-game/raw/main/assets/pixel-run.gif" alt="A small runner game where the blocks spell a name"></a>
@@ -87,6 +87,8 @@
     </td>
   </tr>
 </table>
+
+Each one with code has its own repo and live page: [name-hover](https://github.com/miguelclavel/name-hover) · [pixel-trail](https://github.com/miguelclavel/pixel-trail) · [wave-line](https://github.com/miguelclavel/wave-line) · [scroll-into-header](https://github.com/miguelclavel/scroll-into-header) · [pixel-dissolve](https://github.com/miguelclavel/pixel-dissolve) · [dark-mode](https://github.com/miguelclavel/dark-mode) · [sticker-burst](https://github.com/miguelclavel/sticker-burst) · [pixel-run-game](https://github.com/miguelclavel/pixel-run-game)
 
 ## Things I built with Claude Code
 
