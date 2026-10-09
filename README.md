@@ -5,7 +5,7 @@
 
 **Senior Product Designer at U.S. News & World Report.** I work in fintech, on insurance quotes, credit cards and loans, where getting it wrong costs someone real money or real time. Ten years in design, the last four here. I make complicated products easier to use.
 
-**[Portfolio](https://miguelclavel.com/?utm_source=github&utm_medium=profile)** · **[Ask my portfolio](https://chat.miguelclavel.com/?utm_source=github&utm_medium=profile)** · [LinkedIn](https://www.linkedin.com/in/miguelclavel/) · [Behance](https://www.behance.net/miguelclavel) · [Resume (PDF)](https://miguelclavel.com/assets/Miguel-Clavel-Senior-Product-Designer-Resume-2026.pdf) · [hello@miguelclavel.com](mailto:hello@miguelclavel.com)
+**[Portfolio](https://miguelclavel.com/?utm_source=github&utm_medium=profile)** · **[Ask my portfolio](https://chat.miguelclavel.com/?utm_source=github&utm_medium=profile)** · **[Live demos](https://miguelclavel.github.io/)** · [LinkedIn](https://www.linkedin.com/in/miguelclavel/) · [Behance](https://www.behance.net/miguelclavel) · [Resume (PDF)](https://miguelclavel.com/assets/Miguel-Clavel-Senior-Product-Designer-Resume-2026.pdf) · [hello@miguelclavel.com](mailto:hello@miguelclavel.com)
 
 ## Selected work
 
