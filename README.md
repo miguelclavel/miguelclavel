@@ -77,7 +77,7 @@
 | --- | --- |
 | **[AI UX patterns](https://github.com/miguelclavel/ai-ux-patterns)** | Seven interface patterns for AI products people can trust: sources, confidence, editable output, undo, why we ask, clear boundaries, and review before an agent acts. Each with a [working demo](https://miguelclavel.github.io/ai-ux-patterns/). |
 | **[AI prompts for product designers](https://github.com/miguelclavel/ai-prompts-for-designers)** | Ten prompts for research synthesis, heuristic and accessibility reviews, UX copy, experiments, prototypes and case studies, each grounded in your own material and followed by the checks to run. |
-| **[Claude skills for designers](https://github.com/miguelclavel/claude-skills-for-designers)** | Four Claude Code skills built from my own process: design review, AI output review, case study short version, and launch check. |
+| **[Claude skills for designers](https://github.com/miguelclavel/claude-skills-for-designers)** | Ten Claude Code skills built from my own process: design review, privacy scan, research synthesis, UX copy, experiment plans, launch checks and more. |
 | **[Product design playbook](https://github.com/miguelclavel/product-design-playbook)** | How I take a product from a vague request to live and keep it improving: eight steps, real examples, and free templates. |
 
 ## Things you can copy
@@ -97,7 +97,9 @@
   </tr>
 </table>
 
-Each one with code has its own repo and live page: [name-hover](https://github.com/miguelclavel/name-hover) · [pixel-trail](https://github.com/miguelclavel/pixel-trail) · [wave-line](https://github.com/miguelclavel/wave-line) · [scroll-into-header](https://github.com/miguelclavel/scroll-into-header) · [pixel-dissolve](https://github.com/miguelclavel/pixel-dissolve) · [dark-mode](https://github.com/miguelclavel/dark-mode) · [sticker-burst](https://github.com/miguelclavel/sticker-burst) · [pixel-run-game](https://github.com/miguelclavel/pixel-run-game)
+**[Portfolio chat starter](https://github.com/miguelclavel/portfolio-chat-starter)**: a portfolio people can talk to, in one file. Your own answers, typo tolerant matching, quick or detailed, and a job post matcher. [Try it](https://miguelclavel.github.io/portfolio-chat-starter/).
+
+Each one with code has its own repo and live page: [name-hover](https://github.com/miguelclavel/name-hover) · [pixel-trail](https://github.com/miguelclavel/pixel-trail) · [wave-line](https://github.com/miguelclavel/wave-line) · [scroll-into-header](https://github.com/miguelclavel/scroll-into-header) · [pixel-dissolve](https://github.com/miguelclavel/pixel-dissolve) · [dark-mode](https://github.com/miguelclavel/dark-mode) · [sticker-burst](https://github.com/miguelclavel/sticker-burst) · [curve-carousel](https://github.com/miguelclavel/curve-carousel) · [portfolio-details](https://github.com/miguelclavel/portfolio-details) · [pixel-run-game](https://github.com/miguelclavel/pixel-run-game)
 
 ## Things I built with Claude Code
 
