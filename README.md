@@ -87,6 +87,15 @@
 | **[UX research skills](https://github.com/miguelclavel/ux-research-skills)** | Eighteen Claude Code skills, one per research job: plans, screeners, interviews, personas, journey maps, usability tests, AI browser walkthroughs and synthetic users. |
 | **[Product design playbook](https://github.com/miguelclavel/product-design-playbook)** | How I take a product from a vague request to live and keep it improving: eight steps, real examples, and free templates. |
 
+All 28 skills install in Claude Code in two commands:
+
+```
+/plugin marketplace add miguelclavel/claude-skills-for-designers
+/plugin install claude-skills-for-designers@miguelclavel
+```
+
+The research set is `ux-research-skills@miguelclavel`.
+
 ## Things you can copy
 
 <table>
