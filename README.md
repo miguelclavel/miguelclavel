@@ -71,6 +71,12 @@
 </table>
 </details>
 
+## Built with Claude Code
+
+**[chat.miguelclavel.com](https://chat.miguelclavel.com/?utm_source=github&utm_medium=profile)**: a portfolio you can talk to. Answers written by me from my resume and case studies, a job post matcher, and a weekly loop that learns from real questions. [How it works](https://github.com/miguelclavel/chat-portfolio) · [Build log](https://github.com/miguelclavel/chat-portfolio/blob/main/BUILD-LOG.md)
+
+**[miguelclavel.com](https://miguelclavel.com/?utm_source=github&utm_medium=profile)**: twelve case studies in one long scroll, rebuilt working side by side with Claude. [What broke at launch, and every interaction on it](https://github.com/miguelclavel/miguelclavel.com)
+
 ## Designing with AI
 
 | | |
@@ -101,19 +107,6 @@
 **[Portfolio chat starter](https://github.com/miguelclavel/portfolio-chat-starter)**: a portfolio people can talk to, in one file. Your own answers, typo tolerant matching, quick or detailed, and a job post matcher. [Try it](https://miguelclavel.github.io/portfolio-chat-starter/).
 
 Each one with code has its own repo and live page: [name-hover](https://github.com/miguelclavel/name-hover) · [pixel-trail](https://github.com/miguelclavel/pixel-trail) · [wave-line](https://github.com/miguelclavel/wave-line) · [scroll-into-header](https://github.com/miguelclavel/scroll-into-header) · [pixel-dissolve](https://github.com/miguelclavel/pixel-dissolve) · [dark-mode](https://github.com/miguelclavel/dark-mode) · [sticker-burst](https://github.com/miguelclavel/sticker-burst) · [curve-carousel](https://github.com/miguelclavel/curve-carousel) · [portfolio-details](https://github.com/miguelclavel/portfolio-details) · [pixel-run-game](https://github.com/miguelclavel/pixel-run-game)
-
-## Things I built with Claude Code
-
-**[A portfolio you can talk to](https://chat.miguelclavel.com/?utm_source=github&utm_medium=profile).** AI is changing the way people look for things: we ask a question and expect an answer right away. So instead of scrolling through projects, visitors ask about my background, projects and experience, and every answer comes from my own resume and case studies, so it never makes things up about me.
-
-- Paste a job description and it finds the most relevant work for that role
-- A quick answer or a detailed one, light or dark, typed or spoken
-- A weekly feedback loop: questions it can't answer yet get recorded, and I add the answers
-
-Designed in Claude Design, built with Claude Code, running on Cloudflare Workers. [How it works](https://github.com/miguelclavel/chat-portfolio).
-
-**[miguelclavel.com](https://miguelclavel.com/?utm_source=github&utm_medium=profile)**, rebuilt from the ground up working side by side with Claude. Three things broke on launch week that had nothing to do with the design, and any one of them would have meant nobody saw it. [What broke and what I learned](https://github.com/miguelclavel/miguelclavel.com).
-
 
 ## How I work
 
