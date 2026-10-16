@@ -1,144 +1,59 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" width="100%" alt="Miguel Clavel. Senior Product Designer, fintech, insurance and credit. I make money decisions less confusing.">
-</picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/hero-dark.webp"><img src="assets/profile/hero-light.webp" width="100%" alt="Miguel Clavel. Complex products, made simple. Senior Product Designer at U.S. News &amp; World Report. I design fintech, insurance and credit products used by more than 40 million people a year."></picture>
 
-**Senior Product Designer at U.S. News & World Report.** I work in fintech, on insurance quotes, credit cards and loans, where getting it wrong costs someone real money or real time. Ten years in design, the last four here. I make complicated products easier to use.
+<p align="center"><a href="https://miguelclavel.com/?utm_source=github&utm_medium=profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/btn-portfolio-dark.webp"><img src="assets/profile/btn-portfolio-light.webp" height="58" alt="View my portfolio"></picture></a><a href="https://chat.miguelclavel.com/?utm_source=github&utm_medium=profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/btn-chat-dark.webp"><img src="assets/profile/btn-chat-light.webp" height="58" alt="Ask my portfolio"></picture></a></p>
 
-**[Portfolio](https://miguelclavel.com/?utm_source=github&utm_medium=profile)** · **[Ask my portfolio](https://chat.miguelclavel.com/?utm_source=github&utm_medium=profile)** · **[Live demos](https://miguelclavel.github.io/)** · [LinkedIn](https://www.linkedin.com/in/miguelclavel/) · [Behance](https://www.behance.net/miguelclavel) · [Resume (PDF)](https://miguelclavel.com/assets/Miguel-Clavel-Senior-Product-Designer-Resume-2026.pdf) · [hello@miguelclavel.com](mailto:hello@miguelclavel.com)
+<p align="center"><a href="https://www.linkedin.com/in/miguelclavel/">LinkedIn</a> &nbsp;·&nbsp; <a href="https://miguelclavel.com/assets/Miguel-Clavel-Senior-Product-Designer-Resume-2026.pdf">Resume (PDF)</a> &nbsp;·&nbsp; <a href="https://miguelclavel.github.io/">Live demos</a> &nbsp;·&nbsp; <a href="mailto:hello@miguelclavel.com">hello@miguelclavel.com</a></p>
 
-## Selected work
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/stats-dark.webp"><img src="assets/profile/stats-light.webp" width="100%" alt="40M+ people a year use the products I design. 23 form fields became 19 tap-answered questions. Site audit score from 66 to 88 after the insurance hub rebuild. 40% less time on research synthesis and prototyping."></picture>
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://miguelclavel.com/work/auto-insurance-conversational-flow?utm_source=github&utm_medium=profile"><img src="assets/work/auto-insurance-conversational-flow.jpg" alt="Conversational Insurance Flow: a car insurance quote asked one question at a time"></a>
-      <h3><a href="https://miguelclavel.com/work/auto-insurance-conversational-flow?utm_source=github&utm_medium=profile">Conversational Insurance Flow</a></h3>
-      <p>A car insurance quote rebuilt as a conversation, one clear question at a time. 23 form fields became 19 questions across 5 stages, answered by tapping instead of typing. No language model at runtime.</p>
-      <sub>U.S. News · Conversation design · Accessibility</sub>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://miguelclavel.com/work/insurance-landing-page?utm_source=github&utm_medium=profile"><img src="assets/work/insurance-landing-page.jpg" alt="Insurance Landing Page: the rebuilt insurance hub with a quote form first"></a>
-      <h3><a href="https://miguelclavel.com/work/insurance-landing-page?utm_source=github&utm_medium=profile">Insurance Landing Page</a></h3>
-      <p>A 9,500 pixel list of links with no way to start a quote. Heatmaps showed 26.6% of mobile clicks landing on things that weren't links. The rebuild put a quote form first and moved the site audit score from 66 to 88, keeping about 120 production links intact.</p>
-      <sub>U.S. News · Information architecture · Conversion</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://miguelclavel.com/work/360-homepage-redesign?utm_source=github&utm_medium=profile"><img src="assets/work/360-homepage-redesign.jpg" alt="360 Homepage Redesign"></a>
-      <h3><a href="https://miguelclavel.com/work/360-homepage-redesign?utm_source=github&utm_medium=profile">360 Homepage Redesign</a></h3>
-      <p>Heatmap evidence and product strategy that turned a content directory into product discovery.</p>
-      <sub>U.S. News 360 Reviews · Product strategy · Research</sub>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://miguelclavel.com/work/comparison-system?utm_source=github&utm_medium=profile"><img src="assets/work/comparison-system.jpg" alt="Comparison System"></a>
-      <h3><a href="https://miguelclavel.com/work/comparison-system?utm_source=github&utm_medium=profile">Comparison System</a></h3>
-      <p>One responsive comparison pattern, from a wide desktop table down to a phone, with accessible semantics and an engineering handoff.</p>
-      <sub>U.S. News · Design systems · Decision support</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://miguelclavel.com/work/us-news-brand-guide?utm_source=github&utm_medium=profile"><img src="assets/work/us-news-brand-guide.jpg" alt="U.S. News Brand Guide cover"></a>
-      <h3><a href="https://miguelclavel.com/work/us-news-brand-guide?utm_source=github&utm_medium=profile">U.S. News Brand Guide</a></h3>
-      <p>A brand nobody owned. I wrote the 54 page guide, took it through senior stakeholders and legal, then turned it into a system teams could actually follow.</p>
-      <sub>U.S. News · Brand and design system · Governance</sub>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://miguelclavel.com/work/miami-heat-homepage?utm_source=github&utm_medium=profile"><img src="assets/work/miami-heat-homepage.jpg" alt="Miami HEAT Homepage on a desktop screen"></a>
-      <h3><a href="https://miguelclavel.com/work/miami-heat-homepage?utm_source=github&utm_medium=profile">Miami HEAT Homepage</a></h3>
-      <p>The digital relaunch of HEAT.com, balancing editorial and commerce across gameday states.</p>
-      <sub>Miami HEAT · Content architecture · Live operations</sub>
-    </td>
-  </tr>
-</table>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/h-work-dark.webp"><img src="assets/profile/h-work-light.webp" width="100%" alt="Selected work. Six of my twelve case studies."></picture>
+
+<p><a href="https://miguelclavel.com/work/auto-insurance-conversational-flow?utm_source=github&utm_medium=profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/work-1-dark.webp"><img src="assets/profile/work-1-light.webp" width="50%" alt="Conversational Insurance Flow. U.S. News. 23 form fields became 19 questions you answer with a tap. Read the case study."></picture></a><a href="https://miguelclavel.com/work/insurance-landing-page?utm_source=github&utm_medium=profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/work-2-dark.webp"><img src="assets/profile/work-2-light.webp" width="50%" alt="Insurance Landing Page. U.S. News. A quote form first, and the site audit score went from 66 to 88. Read the case study."></picture></a><a href="https://miguelclavel.com/work/360-homepage-redesign?utm_source=github&utm_medium=profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/work-3-dark.webp"><img src="assets/profile/work-3-light.webp" width="50%" alt="360 Homepage Redesign. U.S. News 360 Reviews. Heatmaps turned a content directory into product discovery. Read the case study."></picture></a><a href="https://miguelclavel.com/work/comparison-system?utm_source=github&utm_medium=profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/work-4-dark.webp"><img src="assets/profile/work-4-light.webp" width="50%" alt="Comparison System. U.S. News. One comparison pattern, from a wide desktop table to a phone. Read the case study."></picture></a><a href="https://miguelclavel.com/work/us-news-brand-guide?utm_source=github&utm_medium=profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/work-5-dark.webp"><img src="assets/profile/work-5-light.webp" width="50%" alt="U.S. News Brand Guide. A brand nobody owned, turned into a 54 page system. Read the case study."></picture></a><a href="https://miguelclavel.com/work/miami-heat-homepage?utm_source=github&utm_medium=profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/work-6-dark.webp"><img src="assets/profile/work-6-light.webp" width="50%" alt="Miami HEAT Homepage. HEAT.com relaunched, editorial and commerce on every gameday. Read the case study."></picture></a></p>
 
 <details>
 <summary><b>Six more case studies</b></summary>
-<br>
-<table>
-  <tr>
-    <td width="33%" valign="top"><a href="https://miguelclavel.com/work/mindset-landing-page-strategy?utm_source=github&utm_medium=profile"><img src="assets/work/mindset-landing-page-strategy.jpg" alt="Mindset Landing Page Strategy"><br><b>Mindset Landing Page Strategy</b></a><br><sub>Three testable landing page directions and a structured experiment plan.</sub></td>
-    <td width="33%" valign="top"><a href="https://miguelclavel.com/work/monthly-testing-review?utm_source=github&utm_medium=profile"><img src="assets/work/monthly-testing-review.jpg" alt="Monthly Testing Review"><br><b>Monthly Testing Review</b></a><br><sub>Experiment operations that turned isolated A/B tests into shared learning.</sub></td>
-    <td width="33%" valign="top"><a href="https://miguelclavel.com/work/arena-rebrand-cms?utm_source=github&utm_medium=profile"><img src="assets/work/arena-rebrand-cms.jpg" alt="Arena Rebrand and CMS Migration"><br><b>Arena Rebrand and CMS Migration</b></a><br><sub>A live arena site kept accurate through a full rebrand and CMS migration.</sub></td>
-  </tr>
-  <tr>
-    <td width="33%" valign="top"><a href="https://miguelclavel.com/work/blu-products-launch-system?utm_source=github&utm_medium=profile"><img src="assets/work/blu-products-launch-system.jpg" alt="BLU Products Launch System"><br><b>BLU Products Launch System</b></a><br><sub>More than 20 phone launches, every channel running off one set of parts.</sub></td>
-    <td width="33%" valign="top"><a href="https://miguelclavel.com/work/601-miami-website?utm_source=github&utm_medium=profile"><img src="assets/work/601-miami-website.jpg" alt="601 Miami Website"><br><b>601 Miami Website</b></a><br><sub>Hospitality UX for a restaurant and private events venue.</sub></td>
-    <td width="33%" valign="top"><a href="https://miguelclavel.com/work/medical-training-membership-journey?utm_source=github&utm_medium=profile"><img src="assets/work/medical-training-membership-journey.jpg" alt="Medical Training Membership Journey"><br><b>Medical Training Membership Journey</b></a><br><sub>A training catalog turned into a clear membership decision.</sub></td>
-  </tr>
-</table>
+
+- [Mindset Landing Page Strategy](https://miguelclavel.com/work/mindset-landing-page-strategy?utm_source=github&utm_medium=profile): three testable landing page directions and an experiment plan.
+- [Monthly Testing Review](https://miguelclavel.com/work/monthly-testing-review?utm_source=github&utm_medium=profile): experiment operations that turned isolated A/B tests into shared learning.
+- [Arena Rebrand and CMS Migration](https://miguelclavel.com/work/arena-rebrand-cms?utm_source=github&utm_medium=profile): a live arena site kept accurate through a full rebrand and CMS migration.
+- [BLU Products Launch System](https://miguelclavel.com/work/blu-products-launch-system?utm_source=github&utm_medium=profile): more than 20 phone launches, every channel running off one set of parts.
+- [601 Miami Website](https://miguelclavel.com/work/601-miami-website?utm_source=github&utm_medium=profile): hospitality UX for a restaurant and private events venue.
+- [Medical Training Membership Journey](https://miguelclavel.com/work/medical-training-membership-journey?utm_source=github&utm_medium=profile): a training catalog turned into a clear membership decision.
+
 </details>
 
-## Built with Claude Code
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/h-built-dark.webp"><img src="assets/profile/h-built-light.webp" width="100%" alt="Built with Claude Code. Designed, coded and shipped by me."></picture>
 
-**[chat.miguelclavel.com](https://chat.miguelclavel.com/?utm_source=github&utm_medium=profile)**: a portfolio you can talk to. Answers written by me from my resume and case studies, a job post matcher, and a weekly loop that learns from real questions. [How it works](https://github.com/miguelclavel/chat-portfolio) · [Build log](https://github.com/miguelclavel/chat-portfolio/blob/main/BUILD-LOG.md)
+<p><a href="https://chat.miguelclavel.com/?utm_source=github&utm_medium=profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/built-chat-dark.webp"><img src="assets/profile/built-chat-light.webp" width="50%" alt="chat.miguelclavel.com. A portfolio you can talk to. Answers I wrote myself, never guessed. It matches 2,389 of 2,391 test questions. Try it."></picture></a><a href="https://miguelclavel.com/?utm_source=github&utm_medium=profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/built-site-dark.webp"><img src="assets/profile/built-site-light.webp" width="50%" alt="miguelclavel.com. Twelve case studies, one long scroll, rebuilt side by side with Claude. Visit the site."></picture></a></p>
 
-**[miguelclavel.com](https://miguelclavel.com/?utm_source=github&utm_medium=profile)**: twelve case studies in one long scroll, rebuilt working side by side with Claude. [What broke at launch, and every interaction on it](https://github.com/miguelclavel/miguelclavel.com)
+How they were built: [chat-portfolio](https://github.com/miguelclavel/chat-portfolio) and its [build log](https://github.com/miguelclavel/chat-portfolio/blob/main/BUILD-LOG.md) · [what broke at launch on miguelclavel.com](https://github.com/miguelclavel/miguelclavel.com)
 
-## Designing with AI
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/h-ai-dark.webp"><img src="assets/profile/h-ai-light.webp" width="100%" alt="Designing with AI. Free kits, skills and prompts."></picture>
 
-| | |
-| --- | --- |
-| **[AI UX patterns](https://github.com/miguelclavel/ai-ux-patterns)** | Seven interface patterns for AI products people can trust: sources, confidence, editable output, undo, why we ask, clear boundaries, and review before an agent acts. Each with a [working demo](https://miguelclavel.github.io/ai-ux-patterns/). |
-| **[AI prompts for product designers](https://github.com/miguelclavel/ai-prompts-for-designers)** | Ten prompts for research synthesis, heuristic and accessibility reviews, UX copy, experiments, prototypes and case studies, each grounded in your own material and followed by the checks to run. |
-| **[Claude skills for designers](https://github.com/miguelclavel/claude-skills-for-designers)** | Ten Claude Code skills built from my own process: design review, privacy scan, research synthesis, UX copy, experiment plans, launch checks and more. |
-| **[UX research skills](https://github.com/miguelclavel/ux-research-skills)** | Eighteen Claude Code skills, one per research job: plans, screeners, interviews, personas, journey maps, usability tests, AI browser walkthroughs and synthetic users. |
-| **[Product design playbook](https://github.com/miguelclavel/product-design-playbook)** | How I take a product from a vague request to live and keep it improving: eight steps, real examples, and free templates. |
+<p><a href="https://github.com/miguelclavel/ai-ux-patterns"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/kit-1-dark.webp"><img src="assets/profile/kit-1-light.webp" width="33.3%" alt="AI UX patterns: seven patterns for AI people can trust, each with a live demo."></picture></a><a href="https://github.com/miguelclavel/claude-skills-for-designers"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/kit-2-dark.webp"><img src="assets/profile/kit-2-light.webp" width="33.3%" alt="Claude skills for designers: ten Claude Code skills from my own process."></picture></a><a href="https://github.com/miguelclavel/ux-research-skills"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/kit-3-dark.webp"><img src="assets/profile/kit-3-light.webp" width="33.3%" alt="UX research skills: eighteen skills, one per research job."></picture></a><a href="https://github.com/miguelclavel/ai-prompts-for-designers"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/kit-4-dark.webp"><img src="assets/profile/kit-4-light.webp" width="33.3%" alt="AI prompts for designers: ten prompts, each with the checks to run."></picture></a><a href="https://github.com/miguelclavel/product-design-playbook"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/kit-5-dark.webp"><img src="assets/profile/kit-5-light.webp" width="33.3%" alt="Product design playbook: eight steps from a vague request to live, with free templates."></picture></a><a href="https://github.com/miguelclavel/portfolio-chat-starter"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/kit-6-dark.webp"><img src="assets/profile/kit-6-light.webp" width="33.3%" alt="Portfolio chat starter: a portfolio people can talk to, in one file."></picture></a></p>
 
-All 28 skills install in Claude Code in two commands:
+All 28 skills install in Claude Code in two commands. The research set is `ux-research-skills@miguelclavel`.
 
 ```
 /plugin marketplace add miguelclavel/claude-skills-for-designers
 /plugin install claude-skills-for-designers@miguelclavel
 ```
 
-The research set is `ux-research-skills@miguelclavel`.
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/h-copy-dark.webp"><img src="assets/profile/h-copy-light.webp" width="100%" alt="Things you can copy. Each one with the exact prompt."></picture>
 
-## Things you can copy
+<p><a href="https://github.com/miguelclavel/interaction-recipes"><img src="assets/profile/demo-pixel-trail.webp" width="50%" alt="A pixel trail following the pointer around a name"></a><a href="https://miguelclavel.github.io/pixel-run-game/"><img src="assets/profile/demo-pixel-run.webp" width="50%" alt="Pixel Run, a small runner game where the blocks spell a name"></a></p>
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/miguelclavel/interaction-recipes"><img src="https://github.com/miguelclavel/interaction-recipes/raw/main/02-pixel-trail/demo.gif" alt="A pixel trail following the pointer around a name"></a>
-      <h3><a href="https://github.com/miguelclavel/interaction-recipes">Interaction recipes</a></h3>
-      <p>Twenty small interactions and fixes from my two portfolios, each with a recording, what went wrong, and the exact prompt to build your own.</p>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/miguelclavel/pixel-run-game"><img src="https://github.com/miguelclavel/pixel-run-game/raw/main/assets/pixel-run.gif" alt="A small runner game where the blocks spell a name"></a>
-      <h3><a href="https://github.com/miguelclavel/pixel-run-game">Pixel Run</a></h3>
-      <p>The game in my footer. The blocks you jump spell my name. One file, React 18, no build step, and you can swap in your own face. <a href="https://miguelclavel.github.io/pixel-run-game/">Play it</a>.</p>
-    </td>
-  </tr>
-</table>
+**[Interaction recipes](https://github.com/miguelclavel/interaction-recipes)**: twenty small interactions and fixes from my two portfolios, each with a recording, what went wrong, and the prompt to build your own. **[Pixel Run](https://miguelclavel.github.io/pixel-run-game/)**: the game in my footer, where the blocks you jump spell my name.
 
-**[Portfolio chat starter](https://github.com/miguelclavel/portfolio-chat-starter)**: a portfolio people can talk to, in one file. Your own answers, typo tolerant matching, quick or detailed, and a job post matcher. [Try it](https://miguelclavel.github.io/portfolio-chat-starter/).
+<sub>One repo and live page each: [name-hover](https://github.com/miguelclavel/name-hover) · [pixel-trail](https://github.com/miguelclavel/pixel-trail) · [wave-line](https://github.com/miguelclavel/wave-line) · [scroll-into-header](https://github.com/miguelclavel/scroll-into-header) · [pixel-dissolve](https://github.com/miguelclavel/pixel-dissolve) · [dark-mode](https://github.com/miguelclavel/dark-mode) · [sticker-burst](https://github.com/miguelclavel/sticker-burst) · [curve-carousel](https://github.com/miguelclavel/curve-carousel) · [portfolio-details](https://github.com/miguelclavel/portfolio-details) · [pixel-run-game](https://github.com/miguelclavel/pixel-run-game)</sub>
 
-Each one with code has its own repo and live page: [name-hover](https://github.com/miguelclavel/name-hover) · [pixel-trail](https://github.com/miguelclavel/pixel-trail) · [wave-line](https://github.com/miguelclavel/wave-line) · [scroll-into-header](https://github.com/miguelclavel/scroll-into-header) · [pixel-dissolve](https://github.com/miguelclavel/pixel-dissolve) · [dark-mode](https://github.com/miguelclavel/dark-mode) · [sticker-burst](https://github.com/miguelclavel/sticker-burst) · [curve-carousel](https://github.com/miguelclavel/curve-carousel) · [portfolio-details](https://github.com/miguelclavel/portfolio-details) · [pixel-run-game](https://github.com/miguelclavel/pixel-run-game)
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/how-dark.webp"><img src="assets/profile/how-light.webp" width="100%" alt="How I work. Before I open Figma, I ask three questions. 1, What behavior are we trying to change? 2, What evidence tells us this is the real problem? 3, What happens if we do nothing? On AI: I use it every day for research synthesis, exploring directions and building working prototypes. It cut my synthesis time by about 40%. I am a product designer who understands AI, not an AI person who makes websites."></picture>
 
-## How I work
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/h-exp-dark.webp"><img src="assets/profile/h-exp-light.webp" width="100%" alt="Experience. Ten years in design."></picture>
 
-Before I open Figma, I ask:
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/exp-dark.webp"><img src="assets/profile/exp-light.webp" width="100%" alt="Experience. 2022 to now, U.S. News &amp; World Report, Senior Product Designer, FinTech: credit cards, insurance and loans, and before that Enterprise Systems and 360 Reviews. 2021 to 2022, Miami HEAT, Digital Experience Designer. 2019 to 2021, Empire Medical Training, Senior Graphic Designer, Digital Experience and Brand Strategy. 2014 to 2019, BLU Products, Graphic Designer, Product, Retail and Digital Experience. Education: Florida Atlantic University, BFA in Graphic Design."></picture>
 
-1. What behavior are we trying to change?
-2. What evidence tells us this is the real problem?
-3. What happens if we do nothing?
-
-On AI, since everyone asks. I use it daily and hands on, for research synthesis, exploring directions, and building working prototypes rather than pictures of them. It cut my synthesis time by about 40%. It hasn't replaced the judgment part. I'm a product designer who understands AI, not an AI person who makes websites.
-
-## Experience
-
-| When | Where | Role |
-| --- | --- | --- |
-| 2022&nbsp;to&nbsp;now | U.S. News & World Report | Senior Product Designer, FinTech (credit cards, insurance and loans), and before that Enterprise Systems and 360 Reviews |
-| 2021&nbsp;to&nbsp;2022 | Miami HEAT | Digital Experience Designer |
-| 2019&nbsp;to&nbsp;2021 | Empire Medical Training | Senior Graphic Designer, Digital Experience and Brand Strategy |
-| 2014&nbsp;to&nbsp;2019 | BLU Products | Graphic Designer, Product, Retail and Digital Experience |
-
-Florida Atlantic University, BFA in Graphic Design.
-
-**What I work with:** product strategy, information architecture, journey mapping, user research, usability testing, experimentation and A/B testing, design systems, responsive design, accessibility and WCAG, conversational and agentic UX, AI product design. Figma and FigJam, Figma Make, Claude and Claude Code, v0, analytics and heatmaps.
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/tools-dark.webp"><img src="assets/profile/tools-light.webp" width="100%" alt="Practice: product strategy, information architecture, journey mapping, user research, usability testing, A/B testing, design systems, accessibility (WCAG), conversational and agentic UX, AI product design. Tools: Figma, FigJam, Figma Make, Claude, Claude Code, v0, analytics and heatmaps."></picture>
 
 ---
 
