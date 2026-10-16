@@ -70,7 +70,7 @@ L.append(pic('h-ai', 'Designing with AI. Free kits, skills and prompts.', width=
 L.append('')
 L.append('<p>' + ''.join(link(f'https://github.com/miguelclavel/{repo}', pic(n, alt, width='33.3%')) for n, repo, alt in kits) + '</p>')
 L.append('')
-L.append('All 28 skills install in Claude Code in two commands. The research set is `ux-research-skills@miguelclavel`.')
+L.append('[Find any of my 28 skills by job](https://github.com/miguelclavel/claude-skills-for-designers/blob/main/SKILLS.md). They install in Claude Code in two commands; the research set is `ux-research-skills@miguelclavel`.')
 L.append('')
 L.append('```\n/plugin marketplace add miguelclavel/claude-skills-for-designers\n/plugin install claude-skills-for-designers@miguelclavel\n```')
 L.append('')
