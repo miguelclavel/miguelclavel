@@ -3,10 +3,16 @@
 U = '?utm_source=github&utm_medium=profile'
 A = 'assets/profile/'
 
+# Animated blocks are SVG (render-motion.mjs); only the two buttons stay WebP (render.mjs).
+MOTION = {'hero', 'stats', 'h-work', 'h-built', 'h-ai', 'h-copy', 'h-exp', 'how', 'exp', 'tools',
+          'built-chat', 'built-site', *('work-%d' % i for i in range(1, 7)), *('kit-%d' % i for i in range(1, 7))}
+
+
 def pic(name, alt, width=None, height=None):
     size = f' width="{width}"' if width else (f' height="{height}"' if height else '')
-    return (f'<picture><source media="(prefers-color-scheme: dark)" srcset="{A}{name}-dark.webp">'
-            f'<img src="{A}{name}-light.webp"{size} alt="{alt}"></picture>')
+    ext = 'svg' if name in MOTION else 'webp'
+    return (f'<picture><source media="(prefers-color-scheme: dark)" srcset="{A}{name}-dark.{ext}">'
+            f'<img src="{A}{name}-light.{ext}"{size} alt="{alt}"></picture>')
 
 def link(url, inner):
     return f'<a href="{url}">{inner}</a>'
@@ -74,7 +80,7 @@ L.append('[Find any of my 28 skills by job](https://github.com/miguelclavel/clau
 L.append('')
 L.append('```\n/plugin marketplace add miguelclavel/claude-skills-for-designers\n/plugin install claude-skills-for-designers@miguelclavel\n```')
 L.append('')
-L.append(pic('h-copy', 'Things you can copy. Each one with the exact prompt.', width='100%'))
+L.append(pic('h-copy', 'Things you can copy. Prompt included.', width='100%'))
 L.append('')
 L.append('<p><a href="https://github.com/miguelclavel/interaction-recipes"><img src="' + A + 'demo-pixel-trail.webp" width="50%" alt="A pixel trail following the pointer around a name"></a>'
          '<a href="https://miguelclavel.github.io/pixel-run-game/"><img src="' + A + 'demo-pixel-run.webp" width="50%" alt="Pixel Run, a small runner game where the blocks spell a name"></a></p>')

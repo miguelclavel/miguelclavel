@@ -13,7 +13,8 @@ for (const theme of ['light', 'dark']) {
   await p.goto(pathToFileURL(here + '/profile.html').href + '?theme=' + theme, { waitUntil: 'networkidle0' });
   await p.evaluate(() => document.fonts.ready);
   const fam = await p.evaluate(() => document.fonts.check('700 40px Inter'));
-  for (const el of await p.$$('[data-shot]')) {
+  // Blocks marked data-motion are animated SVGs instead: see render-motion.mjs.
+  for (const el of await p.$$('[data-shot]:not([data-motion])')) {
     const id = await el.evaluate(e => e.dataset.shot);
     await el.screenshot({ path: `${out}/${id}-${theme}.webp`, type: 'webp', quality: 88, omitBackground: true });
   }
