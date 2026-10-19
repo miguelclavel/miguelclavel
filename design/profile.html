@@ -81,7 +81,7 @@
 
   /* Kits */
   .kit .tile { padding: 24px 22px 22px; height: 214px; display: flex; flex-direction: column; }
-  .kit svg { width: 30px; height: 30px; flex: none; }
+  .kit svg.icon { width: 30px; height: 30px; flex: none; }
   .kit h3 { font-size: 18px; line-height: 1.2; margin-top: 16px; }
   .kit .line { font-size: 13.5px; }
   .kit .more { font-size: 13.5px; margin-top: auto; }
@@ -158,11 +158,21 @@
      render-motion.mjs adds the svg.trace to each .tile, sized in pixels, with its own pace. */
   .light { --edge: rgba(0,0,0,.06); } .dark { --edge: rgba(255,255,255,.075); }
   .motion .tile { position: relative; box-shadow: inset 0 0 0 1px var(--edge); opacity: 0; animation: rise 1s var(--ease) .05s forwards; }
-  .motion .trace { position: absolute; left: 0; top: 0; pointer-events: none; opacity: 0; animation: fade 1.2s ease var(--start) forwards; }
-  .motion .trace rect { fill: none; stroke-linecap: round; stroke-dasharray: 80 920; animation: orbit var(--dur) linear var(--start) infinite; }
-  .motion .trace .line { stroke-width: 1.6; }
-  .motion .trace .glow { stroke-width: 7; opacity: .28; }
-  @keyframes orbit { from { stroke-dashoffset: var(--from); } to { stroke-dashoffset: calc(var(--from) - 1000); } }
+  /* A comet: a bright head, a fading tail and a soft halo, all with their fronts aligned
+     (each lag is its dash length minus the head's), gliding around the box edge. The svg
+     sits in the gutter around the tile, so the halo can spill just outside the box. */
+  .motion [data-shot] { position: relative; }
+  .motion .trace { position: absolute; pointer-events: none; overflow: visible; opacity: 0; animation: fade 1.2s ease var(--start) forwards; }
+  /* Plain numbers only in the keyframes: Chrome will not glide between calc() values here.
+     Each part starts with a gap so all four fronts meet at 260; each box starts its lap at
+     its own point through a negative delay (--phase, set by render-motion.mjs). */
+  .motion .trace rect { fill: none; stroke-linecap: butt; animation: orbit var(--dur) linear var(--phase) infinite; }
+  .motion .trace .tail { stroke-width: 1.6; opacity: .35; stroke-dasharray: 0 0 260 740; }
+  .motion .trace .mid  { stroke-width: 2.2; opacity: .75; stroke-dasharray: 0 140 120 740; }
+  .motion .trace .head { stroke-width: 2.8; stroke-dasharray: 0 215 45 740; }
+  .motion .trace .halo { stroke-width: 10; opacity: .6; stroke-dasharray: 0 110 150 740; }
+  .dark.motion .trace .halo { opacity: .75; }
+  @keyframes orbit { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -1000; } }
   .motion .kit .icon * { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1.6s var(--ease) .5s forwards; }
   @keyframes draw { to { stroke-dashoffset: 0; } }
   .motion .work .pic img, .motion .built .pic img { transform-origin: 50% 25%; animation: zoom 18s ease-in-out 1.5s infinite alternate; }

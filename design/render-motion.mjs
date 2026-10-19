@@ -31,19 +31,28 @@ for (const theme of ['light', 'dark']) {
         blk.querySelectorAll(sel).forEach((e, i) => e.style.setProperty('--i', i));
       // Kit icons draw themselves: every shape gets a path length of 1.
       blk.querySelectorAll('.icon *').forEach(e => e.setAttribute('pathLength', '1'));
-      // The light around each box, sized in pixels, each box at its own pace.
+      // The light around each box, sized in pixels, each box at its own pace. It sits in
+      // the block (outside the tile's clipping) so the halo can glow past the edge.
       blk.querySelectorAll('.tile').forEach(t => {
-        const w = t.offsetWidth, h = t.offsetHeight, id = 'edge' + n;
+        const w = t.offsetWidth, h = t.offsetHeight, id = 'edge' + n, pad = 8;
+        // Layout position, not getBoundingClientRect: the tile's entrance transform is
+        // already running here and would shift the light by its 18px rise.
         const svg = document.createElementNS(ns, 'svg');
         svg.setAttribute('class', 'trace');
-        svg.setAttribute('width', w); svg.setAttribute('height', h); svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
-        svg.style.setProperty('--dur', (8 + (n * 7) % 5) + 's');
-        svg.style.setProperty('--start', (1.4 + (n % 4) * 0.35).toFixed(2) + 's');
-        svg.style.setProperty('--from', String((n * 377) % 1000));
+        svg.setAttribute('width', w + pad * 2); svg.setAttribute('height', h + pad * 2);
+        svg.setAttribute('viewBox', `${-pad} ${-pad} ${w + pad * 2} ${h + pad * 2}`);
+        svg.style.left = (t.offsetLeft - pad) + 'px';
+        svg.style.top = (t.offsetTop - pad) + 'px';
+        svg.style.setProperty('--dur', (6 + (n * 7) % 4) + 's');
+        svg.style.setProperty('--start', (1.2 + (n % 4) * 0.3).toFixed(2) + 's');
+        const dur = 6 + (n * 7) % 4;
+        svg.style.setProperty('--phase', (-((n * 377) % 1000) / 1000 * dur).toFixed(2) + 's');
+        const rect = c => `<rect class="${c}" x="0.8" y="0.8" width="${w - 1.6}" height="${h - 1.6}" rx="21.2" pathLength="1000" stroke="url(#${id})"${c === 'halo' ? ` filter="url(#${id}b)"` : ''}/>`;
         svg.innerHTML = `<defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1">` +
-          `<stop offset="0" style="stop-color:var(--g1)"/><stop offset="1" style="stop-color:var(--g3)"/></linearGradient></defs>` +
-          ['glow', 'line'].map(c => `<rect class="${c}" x="0.8" y="0.8" width="${w - 1.6}" height="${h - 1.6}" rx="21.2" pathLength="1000" stroke="url(#${id})"/>`).join('');
-        t.appendChild(svg);
+          `<stop offset="0" style="stop-color:var(--g1)"/><stop offset="1" style="stop-color:var(--g3)"/></linearGradient>` +
+          `<filter id="${id}b" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="3.5"/></filter></defs>` +
+          ['halo', 'tail', 'mid', 'head'].map(rect).join('');
+        blk.appendChild(svg);
         n++;
       });
       const h1 = blk.getBoundingClientRect().height;
