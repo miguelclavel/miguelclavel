@@ -28,6 +28,10 @@
   .full { width: 880px; }
   .half { width: 440px; }
   .third { width: 293px; }
+  /* Phone artboard. GitHub's profile column is 238px at a 320px viewport
+     (24px box padding plus the page margin). 232px still fits there when a
+     webview paints the SVG at its intrinsic width instead of scaling it. */
+  .sm .full, .sm .half, .sm .third { width: 232px; }
   .grad { background: linear-gradient(90deg, var(--g1), var(--g2) 50%, var(--g3)); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
   .more { font-size: 15px; font-weight: 500; color: var(--link); }
@@ -123,7 +127,7 @@
      at once and the entrance is over before anyone scrolls down. */
   .motion { --ease: cubic-bezier(.16, 1, .3, 1);
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-  .motion.wide { font-family: "Helvetica Neue", Arial, sans-serif; }
+  .motion.wide { font-family: "Liberation Sans", "Helvetica Neue", Arial, sans-serif; }
   .light { --chip-hi: #e3e3e8; } .dark { --chip-hi: #2f2f33; }
   @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
   @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
@@ -178,6 +182,52 @@
   .motion .work .pic img, .motion .built .pic img { transform-origin: 50% 25%; animation: zoom 18s ease-in-out 1.5s infinite alternate; }
   @keyframes zoom { from { transform: scale(1); } to { transform: scale(1.05); } }
   .motion .stats .stat:first-child { padding-left: 22px; }
+  /* Phone layout. Selected with a viewport media query (see build-readme.py).
+     Type is sized for the 232px artboard, not scaled down from the desktop SVG,
+     because SVG text does not reflow when the image is shrunk. */
+  .sm .hero { padding-top: 4px; padding-bottom: 8px; }
+  .sm .hero .sig { margin-bottom: 10px; }
+  .sm .hero .name { font-size: 15px; margin-bottom: 8px; }
+  .sm .hero h1 { font-size: 32px; line-height: 1.02; }
+  .sm .hero h1 br { display: none; }
+  .sm .hero .l1, .sm .hero .grad, .sm.motion .hero .l1, .sm.motion .hero .grad { display: block; }
+  .sm .hero .sub { font-size: 14px; line-height: 1.4; margin-top: 12px; }
+  .sm .stats { grid-template-columns: 1fr 1fr; padding: 6px 2px 4px; }
+  .sm .stat { border-left: 0; border-top: 1px solid var(--line); padding: 12px 8px 10px; }
+  .sm .stat:nth-child(-n+2) { border-top: 0; }
+  .sm .stat:nth-child(even) { border-left: 1px solid var(--line); }
+  .sm.motion .stats .stat:first-child { padding-left: 8px; }
+  .sm .stat .num { font-size: 22px; white-space: normal; }
+  .sm .stat .num em { font-size: 16px; padding: 0 3px; }
+  .sm .stat .lbl { font-size: 12px; margin-top: 6px; }
+  .sm .stat .dot { margin-bottom: 8px; }
+  .sm .sec { font-size: 22px; line-height: 1.15; padding-top: 14px; padding-bottom: 2px; text-wrap: wrap; }
+  .sm .work .txt, .sm .built .txt { height: auto; padding-bottom: 12px; }
+  .sm .tile .txt { padding: 16px 14px 0; }
+  .sm .tile h3 { font-size: 18px; }
+  .sm .tile .line { font-size: 13px; }
+  .sm .tile .pic { height: 140px; margin: 10px 14px 0; }
+  .sm .built h3 { font-size: 20px; }
+  .sm .built .pic { height: 148px; }
+  .sm .kit .tile { height: auto; padding: 16px 14px 14px; }
+  .sm .kit h3 { font-size: 16px; margin-top: 12px; }
+  .sm .kit .line { font-size: 13px; }
+  .sm .kit .more { margin-top: 10px; }
+  .sm .how .tile { padding: 16px 14px 14px; }
+  .sm .how h3 { font-size: 22px; }
+  .sm .qs { grid-template-columns: 1fr; gap: 14px; margin-top: 16px; }
+  .sm .q b { font-size: 26px; }
+  .sm .q p { font-size: 15px; margin-top: 4px; }
+  .sm .ai { margin-top: 16px; padding-top: 14px; font-size: 13px; }
+  .sm .exp .row, .sm.motion .exp .row { grid-template-columns: 1fr; gap: 2px; padding: 12px 2px 12px 4px; }
+  .sm .exp .when { font-size: 13px; }
+  .sm .exp .co { font-size: 16px; }
+  .sm .exp .role { font-size: 13px; }
+  .sm .tools { padding: 8px 2px 8px 0; }
+  .sm .tools .grp, .sm.motion .tools .grp { grid-template-columns: 1fr; gap: 6px; padding-left: 4px; }
+  .sm .tools .grp + .grp { margin-top: 12px; }
+  .sm .chip { font-size: 12px; padding: 5px 9px; }
+
   @media (prefers-reduced-motion: reduce) {
     .motion *, .motion *::after { animation: none !important; opacity: 1 !important; transform: none !important; }
     .motion .kit .icon * { stroke-dashoffset: 0 !important; }
@@ -273,8 +323,10 @@ function block(theme) {
   </div></section>`;
   return h + '</div>';
 }
-const theme = new URLSearchParams(location.search).get('theme') || 'light';
+const params = new URLSearchParams(location.search);
+const theme = params.get('theme') || 'light';
 document.getElementById('root').innerHTML = block(theme);
+if (params.get('layout') === 'sm') document.querySelector('.theme').classList.add('sm');
 </script>
 </body>
 </html>
