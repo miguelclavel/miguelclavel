@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="440" height="442" viewBox="0 0 440 442"><foreignObject x="0" y="0" width="440" height="442"><div xmlns="http://www.w3.org/1999/xhtml" class="dark motion" style="width:440px;margin:0"><style><![CDATA[
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="422" viewBox="0 0 440 442"><foreignObject x="0" y="0" width="440" height="442"><div xmlns="http://www.w3.org/1999/xhtml" class="dark motion" style="width:440px;margin:0"><style><![CDATA[
   /* One file, every block of the GitHub profile. render.mjs screenshots each
      [data-shot] element twice, once per theme, onto a transparent background.
      Widths include a 6px transparent gutter so tiles sit 12px apart on GitHub. */

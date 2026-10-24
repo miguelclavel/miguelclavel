@@ -8,11 +8,39 @@ MOTION = {'hero', 'stats', 'h-work', 'h-built', 'h-ai', 'h-copy', 'h-exp', 'how'
           'built-chat', 'built-site', *('work-%d' % i for i in range(1, 7)), *('kit-%d' % i for i in range(1, 7))}
 
 
+# Tiles do not use a percentage width. Half and third SVGs ship at 420px and
+# 278px so two and three fill GitHub's 846px profile column, and the phone
+# variants are 232px so one fills a phone column. A percentage would shrink
+# the phone art on browsers that honor it, and would be ignored on the
+# webviews that paint an SVG at its intrinsic width.
+
 def pic(name, alt, width=None, height=None):
     size = f' width="{width}"' if width else (f' height="{height}"' if height else '')
     ext = 'svg' if name in MOTION else 'webp'
+    # The phone sources omit the space in "prefers-color-scheme:dark". GitHub's
+    # themed-picture element rewrites every source whose media contains
+    # "prefers-color-scheme: dark" (with a space) once a visitor pins a theme,
+    # and the first rewritten source then matches at every viewport. Leaving
+    # the space out keeps the phone query intact, while the desktop source
+    # still has the space so themed-picture can pin it. Order matters: on a
+    # narrow dark screen the phone source matches first; otherwise the desktop
+    # source does. The light phone source sits after the desktop dark source so
+    # a pinned dark theme does not fall through to a light image.
+    if name in MOTION:
+        sm = f'{A}{name}-sm'
+        return (f'<picture>'
+                f'<source media="(max-width: 600px) and (prefers-color-scheme:dark)" srcset="{sm}-dark.{ext}">'
+                f'<source media="(prefers-color-scheme: dark)" srcset="{A}{name}-dark.{ext}">'
+                f'<source media="(max-width: 600px) and (prefers-color-scheme:light)" srcset="{sm}-light.{ext}">'
+                f'<img src="{A}{name}-light.{ext}"{size} alt="{alt}"></picture>')
     return (f'<picture><source media="(prefers-color-scheme: dark)" srcset="{A}{name}-dark.{ext}">'
             f'<img src="{A}{name}-light.{ext}"{size} alt="{alt}"></picture>')
+
+def demo(name, href, alt):
+    # No prefers-color-scheme here, so themed-picture leaves the query alone.
+    return (f'<a href="{href}"><picture>'
+            f'<source media="(max-width: 600px)" srcset="{A}{name}-sm.webp">'
+            f'<img src="{A}{name}.webp" width="50%" alt="{alt}"></picture></a>')
 
 def link(url, inner):
     return f'<a href="{url}">{inner}</a>'
@@ -58,7 +86,7 @@ L.append(pic('stats', '40M+ people a year use the products I design. 23 form fie
 L.append('')
 L.append(pic('h-work', 'Selected work. Six of my twelve case studies.', width='100%'))
 L.append('')
-L.append('<p>' + ''.join(link(f'https://miguelclavel.com/work/{slug}' + U, pic(n, alt, width='50%')) for n, slug, alt in work) + '</p>')
+L.append('<p align="center">' + ''.join(link(f'https://miguelclavel.com/work/{slug}' + U, pic(n, alt)) for n, slug, alt in work) + '</p>')
 L.append('')
 L.append('<details>\n<summary><b>Six more case studies</b></summary>\n')
 for slug, title, line in more:
@@ -67,14 +95,14 @@ L.append('\n</details>')
 L.append('')
 L.append(pic('h-built', 'Built with Claude Code. Designed, coded and shipped by me.', width='100%'))
 L.append('')
-L.append('<p>' + link('https://chat.miguelclavel.com/' + U, pic('built-chat', 'chat.miguelclavel.com. A portfolio you can talk to. Answers I wrote myself, never guessed. It matches 2,389 of 2,391 test questions. Try it.', width='50%'))
-         + link('https://miguelclavel.com/' + U, pic('built-site', 'miguelclavel.com. Twelve case studies, one long scroll, rebuilt side by side with Claude. Visit the site.', width='50%')) + '</p>')
+L.append('<p align="center">' + link('https://chat.miguelclavel.com/' + U, pic('built-chat', 'chat.miguelclavel.com. A portfolio you can talk to. Answers I wrote myself, never guessed. It matches 2,389 of 2,391 test questions. Try it.'))
+         + link('https://miguelclavel.com/' + U, pic('built-site', 'miguelclavel.com. Twelve case studies, one long scroll, rebuilt side by side with Claude. Visit the site.')) + '</p>')
 L.append('')
 L.append('How they were built: [chat-portfolio](https://github.com/miguelclavel/chat-portfolio) and its [build log](https://github.com/miguelclavel/chat-portfolio/blob/main/BUILD-LOG.md) · [what broke at launch on miguelclavel.com](https://github.com/miguelclavel/miguelclavel.com)')
 L.append('')
 L.append(pic('h-ai', 'Designing with AI. Free kits, skills and prompts.', width='100%'))
 L.append('')
-L.append('<p>' + ''.join(link(f'https://github.com/miguelclavel/{repo}', pic(n, alt, width='33.3%')) for n, repo, alt in kits) + '</p>')
+L.append('<p align="center">' + ''.join(link(f'https://github.com/miguelclavel/{repo}', pic(n, alt)) for n, repo, alt in kits) + '</p>')
 L.append('')
 L.append('[Find any of my 28 skills by job](https://github.com/miguelclavel/claude-skills-for-designers/blob/main/SKILLS.md). They install in Claude Code in two commands; the research set is `ux-research-skills@miguelclavel`.')
 L.append('')
@@ -82,8 +110,8 @@ L.append('```\n/plugin marketplace add miguelclavel/claude-skills-for-designers\
 L.append('')
 L.append(pic('h-copy', 'Things you can copy. Prompt included.', width='100%'))
 L.append('')
-L.append('<p><a href="https://github.com/miguelclavel/interaction-recipes"><img src="' + A + 'demo-pixel-trail.webp" width="50%" alt="A pixel trail following the pointer around a name"></a>'
-         '<a href="https://miguelclavel.github.io/pixel-run-game/"><img src="' + A + 'demo-pixel-run.webp" width="50%" alt="Pixel Run, a small runner game where the blocks spell a name"></a></p>')
+L.append('<p align="center">' + demo('demo-pixel-trail', 'https://github.com/miguelclavel/interaction-recipes', 'A pixel trail following the pointer around a name')
+         + demo('demo-pixel-run', 'https://miguelclavel.github.io/pixel-run-game/', 'Pixel Run, a small runner game where the blocks spell a name') + '</p>')
 L.append('')
 L.append('**[Interaction recipes](https://github.com/miguelclavel/interaction-recipes)**: twenty small interactions and fixes from my two portfolios, each with a recording, what went wrong, and the prompt to build your own. **[Pixel Run](https://miguelclavel.github.io/pixel-run-game/)**: the game in my footer, where the blocks you jump spell my name.')
 L.append('')
